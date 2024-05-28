@@ -39,11 +39,11 @@ ${addnewpatient_invalidalert}    css:div[class='toast-message'] p
 ${select_consultant_amith}    xpath://div[@class="col-sm-6"]//select[@name="consultant_doctor"]//option[@value='11']
 ${select_consultant_choice}    xpath://span[@id="select2-consultant_doctor-container"]
 ${consultant_input_field}    xpath://input[@class="select2-search__field"]
-${bed_145}    xpath://div[text()='FF - 145']
+${bed_146}    xpath://div[text()='FF - 146']
 ${bed_status_save_button}    xpath://button[@id="formaddbtn"]
 ${admisstion_date_field}    xpath://input[@id="admission_date"]
 
-${bed_145}    xpath://div[text()='FF - 145']
+${bed_146}    xpath://div[text()='FF - 146']
 ${Addmision_date}    css:input[id="admission_date"]
 ${patientSelect_field}    xpath://span[@class="select2-selection select2-selection--single" and @aria-labelledby="select2-addpatient_id-container"]
 ${patientinput_field}    css:input[class="select2-search__field"]
@@ -127,7 +127,7 @@ Verify the unsuccessfull addition of new patient
 
 Successfull update of the bed status
     Click Link    ${betstatus_icon}
-    Click Element    ${bed_145}
+    Click Element    ${bed_146}
     Click Element    ${patientSelect_field}
     Input Text    ${patientinput_field}   Evander  
     Click Element    ${add_patient_name}
@@ -137,7 +137,7 @@ Successfull update of the bed status
 
 Unsuccessfull update of the bed status
     Click Link    ${betstatus_icon}
-    Click Element    ${bed_145}
+    Click Element    ${bed_146}
     Click Element    ${patientSelect_field}
     Input Text    ${patientinput_field}   Olivier  
     Click Element    ${add_patient_name}
