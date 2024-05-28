@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-05-28T17:27:14.014585" rpa="false" schemaversion="5">
+<suite id="s1" name="Smart Hospital" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital">
+<suite id="s1-s1" name="TestCases" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases">
+<suite id="s1-s1-s1" name="Test Invalid Billsearch" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases\Test_Invalid_Billsearch.robot">
+<test id="s1-s1-s1-t1" name="Unsuccessfull search for a bill using bill number" line="11">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:14.398037" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T17:27:14.397041" elapsed="4.732521"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:19.130555" level="INFO">Opening url 'https://demo.smart-hospital.in/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T17:27:19.130058" elapsed="5.193022"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T17:27:24.323343" elapsed="0.031038"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T17:27:24.354876" elapsed="0.001490"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:14.396044" elapsed="9.960322"/>
+</kw>
+<kw name="Click the login in button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:24.357367" level="INFO">Clicking element '//i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:24.356366" elapsed="1.807487"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:24.356366" elapsed="1.807984"/>
+</kw>
+<kw name="Fill the login form by default credentials for user role" owner="LoginResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:26.169750" level="INFO">Clicking button 'css:button[class='btn']'.</msg>
+<arg>${signin_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:26.169239" elapsed="5.394804"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:26.166833" elapsed="5.397210"/>
+</kw>
+<kw name="Verify the successfull login with valid credentials for user" owner="LoginResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:31.566652" level="INFO">Clicking link 'css:a[class="dropdown-toggle"]'.</msg>
+<arg>${pofile_icon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:31.565533" elapsed="0.312823"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${profile_name}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T17:27:31.878852" elapsed="0.944358"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:32.824220" level="INFO">Verifying element 'css:div[class="sstopuser-test"] h5' contains exact text 'Patient'.</msg>
+<arg>${profile_name}</arg>
+<arg>Patient</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T17:27:32.823708" elapsed="0.135930"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:31.564539" elapsed="1.395099"/>
+</kw>
+<kw name="Unsuccessfull search by bill number" owner="UserResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:32.961638" level="INFO">Clicking link 'xpath://i[@class="fas fa-mortar-pestle"]//parent::a'.</msg>
+<arg>${pharmacy_option}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:32.961141" elapsed="1.567216"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${pharmacy_bill_search_field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T17:27:34.529350" elapsed="0.309992"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:34.840762" level="INFO">Typing text 'lkjhgfcvb' into text field 'css:input[type="search"]'.</msg>
+<arg>${pharmacy_bill_search_field}</arg>
+<arg>lkjhgfcvb</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:34.839839" elapsed="0.315192"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:32.960148" elapsed="2.194883"/>
+</kw>
+<kw name="Verify the unsuccessfull search by bill number" owner="UserResources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${pharmacy_bill_record_assert}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T17:27:35.156688" elapsed="0.031141"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:35.188831" level="INFO">Verifying element 'css:div[id="DataTables_Table_0_info"]' contains exact text 'Records: 0 to 0 of 0 (filtered from 10 total records)'.</msg>
+<arg>${pharmacy_bill_record_assert}</arg>
+<arg>Records: 0 to 0 of 0 (filtered from 10 total records)</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T17:27:35.187829" elapsed="0.026172"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:35.155527" elapsed="0.058971"/>
+</kw>
+<kw name="Close the browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T17:27:35.217026" elapsed="2.944972"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:35.216126" elapsed="2.945872"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:14.395048" elapsed="23.767446"/>
+</test>
+<doc>Test case for the Invalid search for a bill using bill number</doc>
+<status status="PASS" start="2024-05-28T17:27:14.076209" elapsed="24.088682"/>
+</suite>
+<status status="PASS" start="2024-05-28T17:27:14.073361" elapsed="24.094066"/>
+</suite>
+<status status="PASS" start="2024-05-28T17:27:14.033186" elapsed="24.135323"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Smart Hospital">Smart Hospital</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCases">Smart Hospital.TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test Invalid Billsearch">Smart Hospital.TestCases.Test Invalid Billsearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
