@@ -1,0 +1,28 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Invalid Update Bedstatus :: Test case for the invalid bed st...
+==============================================================================
+Successfull update of bedstaus                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Invalid_Update_Bedstatus.robot:12
+    T:  Successfull update of bedstaus    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Invalid_Update_Bedstatus.robot:17
+      Unsuccessfull update of the bed status    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Resources\DoctorResources.robot:140
+      Click Element    ${bed_145}
+      |  ${bed_145} = xpath://div[text()='FF - 145'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://div[text()='FF - 145']' not found.
+------------------------------------------------------------------------------
+TestCases.Test Invalid Update Bedstatus :: Test case for the inval... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\pabot_results\3\output.xml

@@ -1,0 +1,22 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Invalid Doctorlogin :: Test case for the invalid doctor login  
+==============================================================================
+Unsucessfull doctor login using invalid login credentials             | PASS |
+------------------------------------------------------------------------------
+Unsucessfull doctor login by clicking invalid user role               | PASS |
+------------------------------------------------------------------------------
+Unsucessfull doctor login with blank username and password            | PASS |
+------------------------------------------------------------------------------
+Unsucessfull doctor login with blank username                         | PASS |
+------------------------------------------------------------------------------
+Unsucessfull doctor login with the blank password                     | PASS |
+------------------------------------------------------------------------------
+TestCases.Test Invalid Doctorlogin :: Test case for the invalid do... | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\pabot_results\2\output.xml
