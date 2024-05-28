@@ -43,6 +43,16 @@ ${bed_145}    xpath://div[text()='FF - 145']
 ${bed_status_save_button}    xpath://button[@id="formaddbtn"]
 ${admisstion_date_field}    xpath://input[@id="admission_date"]
 
+${bed_145}    xpath://div[text()='FF - 145']
+${Addmision_date}    css:input[id="admission_date"]
+${patientSelect_field}    xpath://span[@class="select2-selection select2-selection--single" and @aria-labelledby="select2-addpatient_id-container"]
+${patientinput_field}    css:input[class="select2-search__field"]
+${consultant_select_field}    xpath://span[@class="select2-selection select2-selection--single" and @aria-labelledby="select2-consultant_doctor-container"]
+${bed_status_save_button}    css:button[id="formaddbtn"]
+${doctal_consultant_select}    xpath://select[@id='consultant_doctor']
+${patient_name}    xpath://li[@class='select2-results__option select2-results__option--highlighted']
+
+
 *** Keywords ***
 
 Change the valid system language
@@ -113,16 +123,34 @@ Verify the successfull adding of new patient
 Verify the unsuccessfull addition of new patient
     Element Text Should Be    ${addnewpatient_invalidalert}    The Name field is required. 
 
-Successfull selection of a bed
+
+
+Successfull update of the bed status
     Click Link    ${betstatus_icon}
-    Click Link    ${bed_145}
-    Click Element    ${admisstion_date_field}
-    Click Element    ${select_consultant_choice}
-    Input Text    ${consultant_input_field}    Amit  Singh (9009)
+    Click Element    ${bed_145}
+    Click Element    ${patientSelect_field}
+    Input Text    ${patientinput_field}   Evander  
+    Click Element    ${patient_name}
+    Click Element    ${Addmision_date}
+    Select From List By Value   ${doctal_consultant_select}     11    
     Click Button    ${bed_status_save_button}
 
-verify the successfull selection of a bed
+Unsuccessfull update of the bed status
     Click Link    ${betstatus_icon}
-    Click Link    ${bed_145}
+    Click Element    ${bed_145}
+    Click Element    ${patientSelect_field}
+    Input Text    ${patientinput_field}   Olivier  
+    Click Element    ${patient_name}
+    Click Element    ${Addmision_date}
+    Select From List By Value   ${doctal_consultant_select}     11    
+    Click Button    ${bed_status_save_button}
+
+Verify the successfull updation of the bed status
+    Wait Until Element Is Visible    css:div[class="toast-message"] 
+    Element Text Should Be    css:div[class="toast-message"]    Patient Added Successfully
+
+Verify the unsuccessfull updation of the bed status
+    Wait Until Element Is Visible    css:div[class="toast-message"] 
+    Element Text Should Not Be    css:div[class="toast-message"]    Patient Added Successfully
 
 

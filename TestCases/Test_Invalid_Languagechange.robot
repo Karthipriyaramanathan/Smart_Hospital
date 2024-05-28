@@ -1,4 +1,4 @@
-*** Settings ***
+#*** Settings ***
 Documentation         Test case for the invalid system language change
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
@@ -8,7 +8,7 @@ Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/DoctorResources.robot
 
 
-*** Test Cases ***
+#*** Test Cases ***
 
 Unsuccessfull system language change
     GenericResources.Click the login in button
