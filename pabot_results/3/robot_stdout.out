@@ -1,0 +1,33 @@
+==============================================================================
+Smart Hospital                                                                
+==============================================================================
+Smart Hospital.TestCases                                                      
+==============================================================================
+Smart Hospital.TestCases.Test Invalid Update Bedstatus :: Test case for the...
+==============================================================================
+Successfull update of bedstaus                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases\Test_Invalid_Update_Bedstatus.robot:12
+    T:  Successfull update of bedstaus    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases\Test_Invalid_Update_Bedstatus.robot:17
+      Unsuccessfull update of the bed status    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\Resources\DoctorResources.robot:140
+      Click Element    ${bed_145}
+      |  ${bed_145} = xpath://div[text()='FF - 145'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://div[text()='FF - 145']' not found.
+------------------------------------------------------------------------------
+Smart Hospital.TestCases.Test Invalid Update Bedstatus :: Test cas... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Smart Hospital.TestCases                                              | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Smart Hospital                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\pabot_results\3\output.xml

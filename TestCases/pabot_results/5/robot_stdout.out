@@ -1,0 +1,14 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Valid Billsearch :: Test case for the valid for a bill search  
+==============================================================================
+Successfull search for a bill using bill number                       | PASS |
+------------------------------------------------------------------------------
+TestCases.Test Valid Billsearch :: Test case for the valid for a b... | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\pabot_results\5\output.xml

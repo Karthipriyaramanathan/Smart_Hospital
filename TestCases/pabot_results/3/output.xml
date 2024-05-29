@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-05-28T15:52:18.347825" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases">
+<suite id="s1-s1" name="Test Invalid Update Bedstatus" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Invalid_Update_Bedstatus.robot">
+<test id="s1-s1-t1" name="Successfull update of bedstaus" line="12">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:18.781417" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T15:52:18.780920" elapsed="7.755880"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:26.538577" level="INFO">Opening url 'https://demo.smart-hospital.in/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T15:52:26.537297" elapsed="6.336184"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T15:52:32.873977" elapsed="0.969124"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T15:52:33.844460" elapsed="0.007241"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:18.779560" elapsed="15.073313"/>
+</kw>
+<kw name="Click the login in button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:33.856368" level="INFO">Clicking element '//i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:33.854548" elapsed="8.521541"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:33.853554" elapsed="8.523028"/>
+</kw>
+<kw name="Fill the successfull login form by clicking the doctor role" owner="LoginResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:42.385447" level="INFO">Clicking link 'xpath://i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${admin_login_button}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:42.377917" elapsed="1.441309"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:43.820354" elapsed="2.194977"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:46.025155" level="INFO">Clicking link 'xpath://a[text()='Doctor']'.</msg>
+<arg>${valid_doctor_button}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:46.021808" elapsed="1.689234"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:47.717345" level="INFO">Clicking button 'css:button[class='btn']'.</msg>
+<arg>${signin_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:47.711539" elapsed="6.227093"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:42.377079" elapsed="11.561553"/>
+</kw>
+<kw name="Verify the successfull login with valid credentials for doctor" owner="LoginResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:53.940618" level="INFO">Clicking link 'css:a[class="dropdown-toggle"]'.</msg>
+<arg>${pofile_icon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:53.940122" elapsed="2.119600"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${profile_name}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T15:52:56.060726" elapsed="1.031760"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:57.093582" level="INFO">Verifying element 'css:div[class="sstopuser-test"] h5' contains exact text 'Doctor'.</msg>
+<arg>${profile_name}</arg>
+<arg>Doctor</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T15:52:57.093582" elapsed="1.660600"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:53.939128" elapsed="4.817044"/>
+</kw>
+<kw name="Unsuccessfull update of the bed status" owner="DoctorResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:58.772936" level="INFO">Clicking link 'xpath://i[@class="fas fa-bed cal15"]//parent::a'.</msg>
+<arg>${betstatus_icon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:58.768851" elapsed="1.691383"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:53:00.462227" level="INFO">Clicking element 'xpath://div[text()='FF - 145']'.</msg>
+<msg time="2024-05-28T15:53:06.231173" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T15:53:06.235968" level="FAIL">Element with locator 'xpath://div[text()='FF - 145']' not found.</msg>
+<arg>${bed_145}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T15:53:00.461230" elapsed="5.796343">Element with locator 'xpath://div[text()='FF - 145']' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${patientSelect_field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T15:53:06.260553" elapsed="0.000473"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${patientinput_field}</arg>
+<arg>Olivier</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T15:53:06.261522" elapsed="0.000496"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${add_patient_name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T15:53:06.262018" elapsed="0.001007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Addmision_date}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T15:53:06.263980" elapsed="0.003814"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${doctal_consultant_select}</arg>
+<arg>11</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-05-28T15:53:06.270097" elapsed="0.000497"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${bed_status_save_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T15:53:06.271514" elapsed="0.000498"/>
+</kw>
+<status status="FAIL" start="2024-05-28T15:52:58.758166" elapsed="7.514852">Element with locator 'xpath://div[text()='FF - 145']' not found.</status>
+</kw>
+<kw name="Verify the unsuccessfull updation of the bed status" owner="DoctorResources">
+<status status="NOT RUN" start="2024-05-28T15:53:06.273884" elapsed="0.000000"/>
+</kw>
+<kw name="Close the browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T15:53:06.276142" elapsed="6.335472"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:53:06.274987" elapsed="6.337123"/>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-05-28T15:52:18.778077" elapsed="53.834298">Element with locator 'xpath://div[text()='FF - 145']' not found.</status>
+</test>
+<doc>Test case for the invalid bed status update</doc>
+<status status="FAIL" start="2024-05-28T15:52:18.399185" elapsed="54.218427"/>
+</suite>
+<status status="FAIL" start="2024-05-28T15:52:18.366889" elapsed="54.256202"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Invalid Update Bedstatus">TestCases.Test Invalid Update Bedstatus</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

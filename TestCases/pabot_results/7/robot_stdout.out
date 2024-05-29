@@ -1,0 +1,58 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Valid NotificationDelete :: Test case for valid delete all n...
+==============================================================================
+Sucsessfull deletion of notification message                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Valid_NotificationDelete.robot:13
+    T:  Sucsessfull deletion of notification message    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Valid_NotificationDelete.robot:18
+      Verify sucsessfull deletion of all notification messages    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Resources\DoctorResources.robot:113
+      Click Link    ${notification_icon}
+      |  ${notification_icon} = xpath://i[@class="fa fa-bell-o"]//parent::a (str)
+______________________________________________________________________________
+| FAIL |
+StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=125.0.6422.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF640021F22+60322]
+	(No symbol) [0x00007FF63FF9CE99]
+	(No symbol) [0x00007FF63FE57EBA]
+	(No symbol) [0x00007FF63FE6A2CD]
+	(No symbol) [0x00007FF63FE6AD5A]
+	(No symbol) [0x00007FF63FE5ED69]
+	(No symbol) [0x00007FF63FE5CAB6]
+	(No symbol) [0x00007FF63FE60641]
+	(No symbol) [0x00007FF63FE606E0]
+	(No symbol) [0x00007FF63FEA968C]
+	(No symbol) [0x00007FF63FE9B346]
+	(No symbol) [0x00007FF63FECC21A]
+	(No symbol) [0x00007FF63FE9ADB6]
+	(No symbol) [0x00007FF63FECC430]
+	(No symbol) [0x00007FF63FEEBC80]
+	(No symbol) [0x00007FF63FECBFC3]
+	(No symbol) [0x00007FF63FE99617]
+	(No symbol) [0x00007FF63FE9A211]
+	GetHandleVerifier [0x00007FF64033946D+3301613]
+	GetHandleVerifier [0x00007FF640383693+3605267]
+	GetHandleVerifier [0x00007FF640379410+3563664]
+	GetHandleVerifier [0x00007FF6400D42F6+790390]
+	(No symbol) [0x00007FF63FFA74DF]
+	(No symbol) [0x00007FF63FFA33D4]
+	(No symbol) [0x00007FF63FFA3562]
+	(No symbol) [0x00007FF63FF92F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+------------------------------------------------------------------------------
+TestCases.Test Valid NotificationDelete :: Test case for valid del... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\pabot_results\7\output.xml

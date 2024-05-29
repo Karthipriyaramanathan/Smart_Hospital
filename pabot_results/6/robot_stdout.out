@@ -1,0 +1,62 @@
+==============================================================================
+Smart Hospital                                                                
+==============================================================================
+Smart Hospital.TestCases                                                      
+==============================================================================
+Smart Hospital.TestCases.Test Valid Doctorlogin :: Test case for the valid ...
+==============================================================================
+Successfull doctor login by clicking doctor login button                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases\Test_Valid_Doctorlogin.robot:12
+    T:  Successfull doctor login by clicking doctor login button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases\Test_Valid_Doctorlogin.robot:14
+      Fill the successfull login form by clicking the doctor role    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\Resources\LoginResources.robot:35
+      Click Link    ${valid_doctor_button}
+      |  ${valid_doctor_button} = xpath://a[text()='Doctor'] (str)
+______________________________________________________________________________
+| FAIL |
+WebDriverException: Message: no such execution context
+  (Session info: chrome=125.0.6422.77)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DAEE1F22+60322]
+	(No symbol) [0x00007FF6DAE5CE99]
+	(No symbol) [0x00007FF6DAD17CE9]
+	(No symbol) [0x00007FF6DACFFCCE]
+	(No symbol) [0x00007FF6DACFE1E5]
+	(No symbol) [0x00007FF6DACFEBAF]
+	(No symbol) [0x00007FF6DAD0E220]
+	(No symbol) [0x00007FF6DAD25C6F]
+	(No symbol) [0x00007FF6DAD2B67A]
+	(No symbol) [0x00007FF6DACFF33A]
+	(No symbol) [0x00007FF6DAD2584F]
+	(No symbol) [0x00007FF6DADABB5B]
+	(No symbol) [0x00007FF6DAD8BFC3]
+	(No symbol) [0x00007FF6DAD59617]
+	(No symbol) [0x00007FF6DAD5A211]
+	GetHandleVerifier [0x00007FF6DB1F946D+3301613]
+	GetHandleVerifier [0x00007FF6DB243693+3605267]
+	GetHandleVerifier [0x00007FF6DB239410+3563664]
+	GetHandleVerifier [0x00007FF6DAF942F6+790390]
+	(No symbol) [0x00007FF6DAE674DF]
+	(No symbol) [0x00007FF6DAE633D4]
+	(No symbol) [0x00007FF6DAE63562]
+	(No symbol) [0x00007FF6DAE52F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+------------------------------------------------------------------------------
+Successful patient login by the default login credentials             | PASS |
+------------------------------------------------------------------------------
+Smart Hospital.TestCases.Test Valid Doctorlogin :: Test case for t... | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Smart Hospital.TestCases                                              | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Smart Hospital                                                        | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\pabot_results\6\output.xml

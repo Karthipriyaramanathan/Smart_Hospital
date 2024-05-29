@@ -1,0 +1,15 @@
+datasources:846301d01fabab1b2d5416b11c98a1bc7aa00000
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:26d4083f414d74a262493bf6a0cdc9b7f15f3d1b
+--suite TestCases.Test Invalid Addnewpatient
+--suite TestCases.Test Invalid Billsearch
+--suite TestCases.Test Invalid Doctorlogin
+--suite TestCases.Test Invalid Update Bedstatus
+--suite TestCases.Test Valid Addnewpatient
+--suite TestCases.Test Valid Billsearch
+--suite TestCases.Test Valid Doctorlogin
+--suite TestCases.Test Valid NotificationDelete
+--suite TestCases.Test Valid Update Bedstatus
+--suite TestCases.Test Valid Userlogin
+--suite TestCases.Test Valid Viewbilldetails

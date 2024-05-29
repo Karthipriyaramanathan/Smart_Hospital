@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-05-28T15:52:18.372677" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases">
+<suite id="s1-s1" name="Test Valid NotificationDelete" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Valid_NotificationDelete.robot">
+<test id="s1-s1-t1" name="Sucsessfull deletion of notification message" line="13">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:18.776582" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T15:52:18.776582" elapsed="7.695533"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:26.474117" level="INFO">Opening url 'https://demo.smart-hospital.in/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T15:52:26.473120" elapsed="0.570547"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T15:52:27.044812" elapsed="6.080405"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T15:52:33.126225" elapsed="0.367157"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:18.774784" elapsed="14.718598"/>
+</kw>
+<kw name="Click the login in button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:33.531784" level="INFO">Clicking element '//i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:33.495157" elapsed="8.895408"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:33.493880" elapsed="8.897201"/>
+</kw>
+<kw name="Fill the successfull login form by clicking the doctor role" owner="LoginResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:42.405129" level="INFO">Clicking link 'xpath://i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${admin_login_button}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:42.392825" elapsed="2.800455"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:45.193873" elapsed="0.844237"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:46.040324" level="INFO">Clicking link 'xpath://a[text()='Doctor']'.</msg>
+<arg>${valid_doctor_button}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:46.039383" elapsed="0.379199"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:46.423239" level="INFO">Clicking button 'css:button[class='btn']'.</msg>
+<arg>${signin_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:46.419083" elapsed="6.889856"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:42.391577" elapsed="10.917858"/>
+</kw>
+<kw name="Verify the successfull login with valid credentials for doctor" owner="LoginResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:53.311165" level="INFO">Clicking link 'css:a[class="dropdown-toggle"]'.</msg>
+<arg>${pofile_icon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:53.310670" elapsed="0.546499"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${profile_name}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T15:52:53.857756" elapsed="0.081870"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:53.940618" level="INFO">Verifying element 'css:div[class="sstopuser-test"] h5' contains exact text 'Doctor'.</msg>
+<arg>${profile_name}</arg>
+<arg>Doctor</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T15:52:53.940122" elapsed="0.048945"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:53.309932" elapsed="0.679135"/>
+</kw>
+<kw name="Delete the all notification message" owner="DoctorResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:53.990482" level="INFO">Clicking link 'xpath://i[@class="fa fa-bell-o"]//parent::a'.</msg>
+<arg>${notification_icon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:53.990482" elapsed="1.240172"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:55.232375" level="INFO">Clicking button 'xpath://i[@class="fa fa-trash"]//parent::button'.</msg>
+<arg>${delete_notification_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T15:52:55.231263" elapsed="3.790938"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:59.023876" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-05-28T15:52:59.023379" elapsed="0.345181"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:52:53.989563" elapsed="5.380108"/>
+</kw>
+<kw name="Verify sucsessfull deletion of all notification messages" owner="DoctorResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T15:52:59.391537" level="INFO">Clicking link 'xpath://i[@class="fa fa-bell-o"]//parent::a'.</msg>
+<msg time="2024-05-28T15:53:02.085402" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T15:53:02.088909" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=125.0.6422.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF640021F22+60322]
+	(No symbol) [0x00007FF63FF9CE99]
+	(No symbol) [0x00007FF63FE57EBA]
+	(No symbol) [0x00007FF63FE6A2CD]
+	(No symbol) [0x00007FF63FE6AD5A]
+	(No symbol) [0x00007FF63FE5ED69]
+	(No symbol) [0x00007FF63FE5CAB6]
+	(No symbol) [0x00007FF63FE60641]
+	(No symbol) [0x00007FF63FE606E0]
+	(No symbol) [0x00007FF63FEA968C]
+	(No symbol) [0x00007FF63FE9B346]
+	(No symbol) [0x00007FF63FECC21A]
+	(No symbol) [0x00007FF63FE9ADB6]
+	(No symbol) [0x00007FF63FECC430]
+	(No symbol) [0x00007FF63FEEBC80]
+	(No symbol) [0x00007FF63FECBFC3]
+	(No symbol) [0x00007FF63FE99617]
+	(No symbol) [0x00007FF63FE9A211]
+	GetHandleVerifier [0x00007FF64033946D+3301613]
+	GetHandleVerifier [0x00007FF640383693+3605267]
+	GetHandleVerifier [0x00007FF640379410+3563664]
+	GetHandleVerifier [0x00007FF6400D42F6+790390]
+	(No symbol) [0x00007FF63FFA74DF]
+	(No symbol) [0x00007FF63FFA33D4]
+	(No symbol) [0x00007FF63FFA3562]
+	(No symbol) [0x00007FF63FF92F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</msg>
+<arg>${notification_icon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T15:52:59.391041" elapsed="2.728633">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=125.0.6422.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF640021F22+60322]
+	(No symbol) [0x00007FF63FF9CE99]
+	(No symbol) [0x00007FF63FE57EBA]
+	(No symbol) [0x00007FF63FE6A2CD]
+	(No symbol) [0x00007FF63FE6AD5A]
+	(No symbol) [0x00007FF63FE5ED69]
+	(No symbol) [0x00007FF63FE5CAB6]
+	(No symbol) [0x00007FF63FE60641]
+	(No symbol) [0x00007FF63FE606E0]
+	(No symbol) [0x00007FF63FEA968C]
+	(No symbol) [0x00007FF63FE9B346]
+	(No symbol) [0x00007FF63FECC21A]
+	(No symbol) [0x00007FF63FE9ADB6]
+	(No symbol) [0x00007FF63FECC430]
+	(No symbol) [0x00007FF63FEEBC80]
+	(No symbol) [0x00007FF63FECBFC3]
+	(No symbol) [0x00007FF63FE99617]
+	(No symbol) [0x00007FF63FE9A211]
+	GetHandleVerifier [0x00007FF64033946D+3301613]
+	GetHandleVerifier [0x00007FF640383693+3605267]
+	GetHandleVerifier [0x00007FF640379410+3563664]
+	GetHandleVerifier [0x00007FF6400D42F6+790390]
+	(No symbol) [0x00007FF63FFA74DF]
+	(No symbol) [0x00007FF63FFA33D4]
+	(No symbol) [0x00007FF63FFA3562]
+	(No symbol) [0x00007FF63FF92F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</status>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>css:div[class="alert alert-danger"]</arg>
+<arg>No Record Found</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2024-05-28T15:53:02.121658" elapsed="0.000497"/>
+</kw>
+<status status="FAIL" start="2024-05-28T15:52:59.371180" elapsed="2.751968">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=125.0.6422.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF640021F22+60322]
+	(No symbol) [0x00007FF63FF9CE99]
+	(No symbol) [0x00007FF63FE57EBA]
+	(No symbol) [0x00007FF63FE6A2CD]
+	(No symbol) [0x00007FF63FE6AD5A]
+	(No symbol) [0x00007FF63FE5ED69]
+	(No symbol) [0x00007FF63FE5CAB6]
+	(No symbol) [0x00007FF63FE60641]
+	(No symbol) [0x00007FF63FE606E0]
+	(No symbol) [0x00007FF63FEA968C]
+	(No symbol) [0x00007FF63FE9B346]
+	(No symbol) [0x00007FF63FECC21A]
+	(No symbol) [0x00007FF63FE9ADB6]
+	(No symbol) [0x00007FF63FECC430]
+	(No symbol) [0x00007FF63FEEBC80]
+	(No symbol) [0x00007FF63FECBFC3]
+	(No symbol) [0x00007FF63FE99617]
+	(No symbol) [0x00007FF63FE9A211]
+	GetHandleVerifier [0x00007FF64033946D+3301613]
+	GetHandleVerifier [0x00007FF640383693+3605267]
+	GetHandleVerifier [0x00007FF640379410+3563664]
+	GetHandleVerifier [0x00007FF6400D42F6+790390]
+	(No symbol) [0x00007FF63FFA74DF]
+	(No symbol) [0x00007FF63FFA33D4]
+	(No symbol) [0x00007FF63FFA3562]
+	(No symbol) [0x00007FF63FF92F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</status>
+</kw>
+<kw name="Close the browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T15:53:02.125631" elapsed="11.128262"/>
+</kw>
+<status status="PASS" start="2024-05-28T15:53:02.124638" elapsed="11.129255"/>
+</kw>
+<status status="FAIL" start="2024-05-28T15:52:18.774090" elapsed="54.480425">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=125.0.6422.77); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF640021F22+60322]
+	(No symbol) [0x00007FF63FF9CE99]
+	(No symbol) [0x00007FF63FE57EBA]
+	(No symbol) [0x00007FF63FE6A2CD]
+	(No symbol) [0x00007FF63FE6AD5A]
+	(No symbol) [0x00007FF63FE5ED69]
+	(No symbol) [0x00007FF63FE5CAB6]
+	(No symbol) [0x00007FF63FE60641]
+	(No symbol) [0x00007FF63FE606E0]
+	(No symbol) [0x00007FF63FEA968C]
+	(No symbol) [0x00007FF63FE9B346]
+	(No symbol) [0x00007FF63FECC21A]
+	(No symbol) [0x00007FF63FE9ADB6]
+	(No symbol) [0x00007FF63FECC430]
+	(No symbol) [0x00007FF63FEEBC80]
+	(No symbol) [0x00007FF63FECBFC3]
+	(No symbol) [0x00007FF63FE99617]
+	(No symbol) [0x00007FF63FE9A211]
+	GetHandleVerifier [0x00007FF64033946D+3301613]
+	GetHandleVerifier [0x00007FF640383693+3605267]
+	GetHandleVerifier [0x00007FF640379410+3563664]
+	GetHandleVerifier [0x00007FF6400D42F6+790390]
+	(No symbol) [0x00007FF63FFA74DF]
+	(No symbol) [0x00007FF63FFA33D4]
+	(No symbol) [0x00007FF63FFA3562]
+	(No symbol) [0x00007FF63FF92F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</status>
+</test>
+<doc>Test case for valid delete all notification messages</doc>
+<status status="FAIL" start="2024-05-28T15:52:18.443485" elapsed="54.813935"/>
+</suite>
+<status status="FAIL" start="2024-05-28T15:52:18.419664" elapsed="54.840406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Valid NotificationDelete">TestCases.Test Valid NotificationDelete</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

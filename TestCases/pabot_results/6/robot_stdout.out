@@ -1,0 +1,16 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Valid Doctorlogin :: Test case for the valid doctor login      
+==============================================================================
+Successfull doctor login by clicking doctor login button              | PASS |
+------------------------------------------------------------------------------
+Successful patient login by the default login credentials             | PASS |
+------------------------------------------------------------------------------
+TestCases.Test Valid Doctorlogin :: Test case for the valid doctor... | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\pabot_results\6\output.xml

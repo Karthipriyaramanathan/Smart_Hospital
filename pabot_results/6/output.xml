@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-05-28T17:27:14.055449" rpa="false" schemaversion="5">
+<suite id="s1" name="Smart Hospital" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital">
+<suite id="s1-s1" name="TestCases" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases">
+<suite id="s1-s1-s1" name="Test Valid Doctorlogin" source="C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Smart_Hospital\TestCases\Test_Valid_Doctorlogin.robot">
+<test id="s1-s1-s1-t1" name="Successfull doctor login by clicking doctor login button" line="12">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:14.524916" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T17:27:14.524420" elapsed="4.498264"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:19.023677" level="INFO">Opening url 'https://demo.smart-hospital.in/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T17:27:19.023180" elapsed="4.199727"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T17:27:23.223502" elapsed="0.074343"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T17:27:23.303360" elapsed="0.006591"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:14.522847" elapsed="8.787600"/>
+</kw>
+<kw name="Click the login in button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:23.312743" level="INFO">Clicking element '//i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:23.311751" elapsed="2.034180"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:23.310670" elapsed="2.035755"/>
+</kw>
+<kw name="Fill the successfull login form by clicking the doctor role" owner="LoginResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:25.351344" level="INFO">Clicking link 'xpath://i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${admin_login_button}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:25.348688" elapsed="0.749491"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:26.105414" elapsed="0.058439"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:26.168063" level="INFO">Clicking link 'xpath://a[text()='Doctor']'.</msg>
+<msg time="2024-05-28T17:27:27.607178" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T17:27:27.607675" level="FAIL">WebDriverException: Message: no such execution context
+  (Session info: chrome=125.0.6422.77)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DAEE1F22+60322]
+	(No symbol) [0x00007FF6DAE5CE99]
+	(No symbol) [0x00007FF6DAD17CE9]
+	(No symbol) [0x00007FF6DACFFCCE]
+	(No symbol) [0x00007FF6DACFE1E5]
+	(No symbol) [0x00007FF6DACFEBAF]
+	(No symbol) [0x00007FF6DAD0E220]
+	(No symbol) [0x00007FF6DAD25C6F]
+	(No symbol) [0x00007FF6DAD2B67A]
+	(No symbol) [0x00007FF6DACFF33A]
+	(No symbol) [0x00007FF6DAD2584F]
+	(No symbol) [0x00007FF6DADABB5B]
+	(No symbol) [0x00007FF6DAD8BFC3]
+	(No symbol) [0x00007FF6DAD59617]
+	(No symbol) [0x00007FF6DAD5A211]
+	GetHandleVerifier [0x00007FF6DB1F946D+3301613]
+	GetHandleVerifier [0x00007FF6DB243693+3605267]
+	GetHandleVerifier [0x00007FF6DB239410+3563664]
+	GetHandleVerifier [0x00007FF6DAF942F6+790390]
+	(No symbol) [0x00007FF6DAE674DF]
+	(No symbol) [0x00007FF6DAE633D4]
+	(No symbol) [0x00007FF6DAE63562]
+	(No symbol) [0x00007FF6DAE52F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</msg>
+<arg>${valid_doctor_button}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T17:27:26.164846" elapsed="1.457166">WebDriverException: Message: no such execution context
+  (Session info: chrome=125.0.6422.77)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DAEE1F22+60322]
+	(No symbol) [0x00007FF6DAE5CE99]
+	(No symbol) [0x00007FF6DAD17CE9]
+	(No symbol) [0x00007FF6DACFFCCE]
+	(No symbol) [0x00007FF6DACFE1E5]
+	(No symbol) [0x00007FF6DACFEBAF]
+	(No symbol) [0x00007FF6DAD0E220]
+	(No symbol) [0x00007FF6DAD25C6F]
+	(No symbol) [0x00007FF6DAD2B67A]
+	(No symbol) [0x00007FF6DACFF33A]
+	(No symbol) [0x00007FF6DAD2584F]
+	(No symbol) [0x00007FF6DADABB5B]
+	(No symbol) [0x00007FF6DAD8BFC3]
+	(No symbol) [0x00007FF6DAD59617]
+	(No symbol) [0x00007FF6DAD5A211]
+	GetHandleVerifier [0x00007FF6DB1F946D+3301613]
+	GetHandleVerifier [0x00007FF6DB243693+3605267]
+	GetHandleVerifier [0x00007FF6DB239410+3563664]
+	GetHandleVerifier [0x00007FF6DAF942F6+790390]
+	(No symbol) [0x00007FF6DAE674DF]
+	(No symbol) [0x00007FF6DAE633D4]
+	(No symbol) [0x00007FF6DAE63562]
+	(No symbol) [0x00007FF6DAE52F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${signin_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T17:27:27.622508" elapsed="0.000497"/>
+</kw>
+<status status="FAIL" start="2024-05-28T17:27:25.346425" elapsed="2.277077">WebDriverException: Message: no such execution context
+  (Session info: chrome=125.0.6422.77)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DAEE1F22+60322]
+	(No symbol) [0x00007FF6DAE5CE99]
+	(No symbol) [0x00007FF6DAD17CE9]
+	(No symbol) [0x00007FF6DACFFCCE]
+	(No symbol) [0x00007FF6DACFE1E5]
+	(No symbol) [0x00007FF6DACFEBAF]
+	(No symbol) [0x00007FF6DAD0E220]
+	(No symbol) [0x00007FF6DAD25C6F]
+	(No symbol) [0x00007FF6DAD2B67A]
+	(No symbol) [0x00007FF6DACFF33A]
+	(No symbol) [0x00007FF6DAD2584F]
+	(No symbol) [0x00007FF6DADABB5B]
+	(No symbol) [0x00007FF6DAD8BFC3]
+	(No symbol) [0x00007FF6DAD59617]
+	(No symbol) [0x00007FF6DAD5A211]
+	GetHandleVerifier [0x00007FF6DB1F946D+3301613]
+	GetHandleVerifier [0x00007FF6DB243693+3605267]
+	GetHandleVerifier [0x00007FF6DB239410+3563664]
+	GetHandleVerifier [0x00007FF6DAF942F6+790390]
+	(No symbol) [0x00007FF6DAE674DF]
+	(No symbol) [0x00007FF6DAE633D4]
+	(No symbol) [0x00007FF6DAE63562]
+	(No symbol) [0x00007FF6DAE52F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</status>
+</kw>
+<kw name="Verify the successfull login with valid credentials for doctor" owner="LoginResources">
+<status status="NOT RUN" start="2024-05-28T17:27:27.623502" elapsed="0.000497"/>
+</kw>
+<kw name="Close the browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T17:27:27.625986" elapsed="2.668457"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:27.624992" elapsed="2.669451"/>
+</kw>
+<status status="FAIL" start="2024-05-28T17:27:14.521063" elapsed="15.773380">WebDriverException: Message: no such execution context
+  (Session info: chrome=125.0.6422.77)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DAEE1F22+60322]
+	(No symbol) [0x00007FF6DAE5CE99]
+	(No symbol) [0x00007FF6DAD17CE9]
+	(No symbol) [0x00007FF6DACFFCCE]
+	(No symbol) [0x00007FF6DACFE1E5]
+	(No symbol) [0x00007FF6DACFEBAF]
+	(No symbol) [0x00007FF6DAD0E220]
+	(No symbol) [0x00007FF6DAD25C6F]
+	(No symbol) [0x00007FF6DAD2B67A]
+	(No symbol) [0x00007FF6DACFF33A]
+	(No symbol) [0x00007FF6DAD2584F]
+	(No symbol) [0x00007FF6DADABB5B]
+	(No symbol) [0x00007FF6DAD8BFC3]
+	(No symbol) [0x00007FF6DAD59617]
+	(No symbol) [0x00007FF6DAD5A211]
+	GetHandleVerifier [0x00007FF6DB1F946D+3301613]
+	GetHandleVerifier [0x00007FF6DB243693+3605267]
+	GetHandleVerifier [0x00007FF6DB239410+3563664]
+	GetHandleVerifier [0x00007FF6DAF942F6+790390]
+	(No symbol) [0x00007FF6DAE674DF]
+	(No symbol) [0x00007FF6DAE633D4]
+	(No symbol) [0x00007FF6DAE63562]
+	(No symbol) [0x00007FF6DAE52F6F]
+	BaseThreadInitThunk [0x00007FFC5DFB7344+20]
+	RtlUserThreadStart [0x00007FFC5FB226B1+33]
+</status>
+</test>
+<test id="s1-s1-s1-t2" name="Successful patient login by the default login credentials" line="17">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:30.298926" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T17:27:30.297423" elapsed="5.082719"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:35.385340" level="INFO">Opening url 'https://demo.smart-hospital.in/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T17:27:35.380638" elapsed="2.432805"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T17:27:37.813939" elapsed="0.046004"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T17:27:37.860439" elapsed="0.002498"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:30.296429" elapsed="7.566508"/>
+</kw>
+<kw name="Click the login in button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:37.864819" level="INFO">Clicking element '//i[@class="fa fa-user"]//parent::a'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:37.864322" elapsed="1.865287"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:37.863434" elapsed="1.866672"/>
+</kw>
+<kw name="Fill the login form by default credentials for user role" owner="LoginResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:39.733584" level="INFO">Clicking button 'css:button[class='btn']'.</msg>
+<arg>${signin_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:39.731101" elapsed="3.879493"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:39.730106" elapsed="3.880488"/>
+</kw>
+<kw name="Verify the successfull login with valid credentials for user" owner="LoginResources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:43.611704" level="INFO">Clicking link 'css:a[class="dropdown-toggle"]'.</msg>
+<arg>${pofile_icon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T17:27:43.611704" elapsed="0.061700"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${profile_name}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T17:27:43.674650" elapsed="0.034686"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T17:27:43.710070" level="INFO">Verifying element 'css:div[class="sstopuser-test"] h5' contains exact text 'Patient'.</msg>
+<arg>${profile_name}</arg>
+<arg>Patient</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-28T17:27:43.709851" elapsed="0.142698"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:43.610594" elapsed="0.242451"/>
+</kw>
+<kw name="Close the browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T17:27:43.854060" elapsed="2.230754"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:43.853565" elapsed="2.231784"/>
+</kw>
+<status status="PASS" start="2024-05-28T17:27:30.295933" elapsed="15.789416"/>
+</test>
+<doc>Test case for the valid doctor login</doc>
+<status status="FAIL" start="2024-05-28T17:27:14.123216" elapsed="31.963126"/>
+</suite>
+<status status="FAIL" start="2024-05-28T17:27:14.121197" elapsed="31.966164"/>
+</suite>
+<status status="FAIL" start="2024-05-28T17:27:14.089733" elapsed="31.998620"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Smart Hospital">Smart Hospital</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="TestCases">Smart Hospital.TestCases</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1-s1" name="Test Valid Doctorlogin">Smart Hospital.TestCases.Test Valid Doctorlogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

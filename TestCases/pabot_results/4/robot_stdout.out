@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Valid Addnewpatient :: Test case to add new patient in the p...
+==============================================================================
+addition of new patient                                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Valid_Addnewpatient.robot:16
+    T:  addition of new patient    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Valid_Addnewpatient.robot:19
+      Successfull addition of new patient    patient_name=prabu    guardian_name=krish    dob=05/29/2002    bloodgroup=O+    marital_status=Single    phone_number=9977554432    email=praburama@gmail.com    address=kaveri avenu,amman nager,coimbatore-98    known_allergies=voimiting    TPA_ID=1876548    TPA_Validity=2026-09-01 00:00:00    ni_number=345678    alternate_number=9876543456
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\Test_Valid_Addnewpatient.robot:25
+      Verify the successfull adding of new patient    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\Resources\DoctorResources.robot:121
+      Element Text Should Be    ${addnewpatient_validalert}    Record Saved Successfully
+      |  ${addnewpatient_validalert} = css:div[class='toast-message'] (str)
+______________________________________________________________________________
+| FAIL |
+The text of element 'css:div[class='toast-message']' should have been 'Record Saved Successfully' but it was 'Mobile Number And Email Already Exist'.
+------------------------------------------------------------------------------
+TestCases.Test Valid Addnewpatient :: Test case to add new patient... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\KARTHIPRIYA R\OneDrive\Desktop\SmartHospital\TestCases\pabot_results\4\output.xml

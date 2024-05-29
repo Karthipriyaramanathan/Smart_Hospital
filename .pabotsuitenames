@@ -1,0 +1,15 @@
+datasources:2a2ddb96dcf063c01bb96ab0fcae00be5df72a40
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:cb0f9141ba8930057ee3f9cb94baf383f1c71fda
+--suite Smart Hospital.TestCases.Test Invalid Addnewpatient
+--suite Smart Hospital.TestCases.Test Invalid Billsearch
+--suite Smart Hospital.TestCases.Test Invalid Doctorlogin
+--suite Smart Hospital.TestCases.Test Invalid Update Bedstatus
+--suite Smart Hospital.TestCases.Test Valid Addnewpatient
+--suite Smart Hospital.TestCases.Test Valid Billsearch
+--suite Smart Hospital.TestCases.Test Valid Doctorlogin
+--suite Smart Hospital.TestCases.Test Valid NotificationDelete
+--suite Smart Hospital.TestCases.Test Valid Update Bedstatus
+--suite Smart Hospital.TestCases.Test Valid Userlogin
+--suite Smart Hospital.TestCases.Test Valid Viewbilldetails
