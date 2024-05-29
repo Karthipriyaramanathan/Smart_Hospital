@@ -28,6 +28,12 @@ Fill the login form with login credentials for doctor
     Input Text    ${username_field}    ${username}
     Input Password    ${password_field}    ${password}
     Click Button    ${signin_button}
+    
+Fill the login form with login credentials for user
+    [Arguments]    ${username}    ${password}
+    Input Text    ${username_field}    ${username}
+    Input Password    ${password_field}    ${password}
+    Click Button    ${signin_button}
 
 Fill the successfull login form by clicking the doctor role
     Click Link    ${admin_login_button}
